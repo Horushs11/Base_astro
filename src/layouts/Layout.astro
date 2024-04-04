@@ -5,6 +5,7 @@ interface Props {
 
 const { title } = Astro.props;
 import Footer from '../layouts/Footer.astro';
+
 ---
 
 <!doctype html>
@@ -20,11 +21,17 @@ import Footer from '../layouts/Footer.astro';
 	<body>
 
 		<h1><span class="text-gradient">Menu</span></h1>
+		<a href="/">Home</a>
+		<a href="/about/">About</a>
+		<a href="/blog/12983">Blog</a>
+		<a href="/autores/Stephen King/IT">Autores</a>
 		<slot />
 		<Footer />
 
 	</body>
 </html>
+
+
 <style is:global>
 	:root {
 		--accent: 136, 58, 234;

@@ -48,6 +48,10 @@ def hola():
     return print("hola")
 ```
 
+| Nombre | Email |
+| ------ | ----- |
+| Pedro | pedro@gmail.com |
+
 
 
 
