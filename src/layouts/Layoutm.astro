@@ -1,0 +1,27 @@
+---
+const {frontmatter} = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{frontmatter.title}</title>
+</head>
+<body>
+    <h1>{frontmatter.title}</h1>  
+    <h2>{frontmatter.fecha}</h2>  
+
+    <div class="container">
+        <slot />
+    </div>
+</body>
+</html>
+
+<style>
+    .container {
+        padding: 50px;
+        width: 70%;
+        text-align: justify;
+    }
+</style>

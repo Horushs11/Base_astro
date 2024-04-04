@@ -1,0 +1,33 @@
+---
+const titulo = "Mi primer componente"
+const items = ['Mercedes','BMW','Audi','Subaru']
+const est = "estilo_lista_items"
+---
+
+<h1>{titulo}</h1>
+
+<ul>
+    {items.map((item) => <li class={est}>{item}</li>)}
+</ul>
+
+<ul>
+    {
+        items.map((item) => (
+            <>
+                <li class={est}>{item}</li>
+            </>
+        ))
+    }
+</ul>
+
+<style>
+    h1 {
+        color: mediumslateblue;
+    }
+
+    .estilo_lista_items {
+        color: mediumslateblue;
+        list-style-type: circle;
+        font-weight: bold;
+    }
+</style>
